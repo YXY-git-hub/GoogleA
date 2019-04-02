@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#Step2
+echo -e "\n**********************************"
+echo "*STEP 2 [Installing the packages]*"
+echo -e "**********************************\n"
+
+#The Google Assistant SDK package contains all the code required to get the Google Assistant running on the device, including the sample code.
+
+#Install the package's system dependencies:
+sudo apt-get install portaudio19-dev libffi-dev libssl-dev libmpg123-dev
+
+#Use pip to install the latest version of the Python package in the virtual environment:
+python -m pip install --upgrade google-assistant-library==1.0.1
+python -m pip install --upgrade google-assistant-sdk[samples]==0.5.1
