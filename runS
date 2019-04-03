@@ -1,0 +1,8 @@
+#!/bin/bash
+
+read -p "What is your project ID? " projectID
+read -p "What is your model ID? " modelID
+read -p "What is the nickname of this device? " nickname
+read -p "Any question for the Google Assistant? " question
+
+googlesamples-assistant-hotword --project-id projectID --device-model-id modelID [--nickname nickname] [--query question]
