@@ -1,0 +1,68 @@
+#!/bin/bash
+
+#Store original value of IFS
+OIFS="$IFS"
+#Set , to separates the input values
+#IFS=","
+
+
+
+#Display Microphone
+echo -e "\n\n****************"
+echo "*USB Microphone*"
+echo -e "****************"
+
+arecord -l
+sleep 3
+#Display Speaker
+echo -e "\n\n*********"
+echo "*Speaker*"
+echo -e "*********"
+
+aplay -l
+echo "************************************************************************************************"
+echo "*Note that the 3.5mm-jack is typically labeled Analog or bcm2835 ALSA (not bcm2835 IEC958/HDMI)*"
+echo -e "************************************************************************************************\n\n"
+sleep 3
+#mic number
+read -p "Input the card number and device number of ur microphone respectively: " micC micD
+#speaker 
+read -p "Input the card number and device number of ur speaker  respectively: " speakerC speakerD
+#Reset IFS to the original value
+IFS="$OIFS"
+
+
+#Create an .asoundrc at home folder
+asoundrc="pcm.!default {
+  type asym
+    capture.pcm \"mic\"
+	  playback.pcm \"speaker\"
+	  }
+	  pcm.mic {
+	    type plug
+		  slave {
+		      pcm \"hw:$micC,$micD\"
+			    }
+				}
+				pcm.speaker {
+				  type plug
+				    slave {
+					    pcm \"hw:$speakerC,$speakerD\"
+						  }
+						  }"
+rm -rf ~/.asoundrc
+echo $asoundrc >> ~/.asoundrc
+
+#Adjust the playback volume
+echo -e "\n\n************************************************"
+echo "*Please adjust PlayBack Volume with [alsamixer]*"
+echo "************************************************"
+sleep 3
+alsamixer
+
+#PLay a test sound
+echo -e "\n\n******************************************************************************"
+echo "*Play a test sound (this will be a person speaking)                          *"
+echo "*Press Ctrl+C when done                                                      *"
+echo "*If you don't hear anything when you run this, check your speaker connection.*"
+echo "******************************************************************************"
