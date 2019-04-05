@@ -1,0 +1,17 @@
+#!/bin/test
+
+echo -e "\n\n***************************"
+echo "Record a short audio clip.*"
+echo "***************************"
+arecord --format=S16_LE --duration=5 --rate=16000 --file-type=raw out.raw
+
+echo -e "\n\n********************"
+echo "*Finished Recording!"
+echo "********************"
+
+
+echo -e "\n\n**************************************************************************************"
+echo "*Check the recording by replaying it.                                                *"
+echo "*If you don't hear anything, you may need to check the recording volume in alsamixer *"
+echo "**************************************************************************************"
+aplay --format=S16_LE --rate=16000 out.raw
