@@ -6,7 +6,7 @@ echo -e "\n****************************"
 echo "*STEP1 [Setting up the env]*"
 echo "****************************"
 
-echo -e "\n\nPlease make sure you move your client credential JSON file to current directory [`pwd`]\n\n"
+echo -e "\n\nPlease make sure you move your client credential JSON file to current directory [`echo $PATH`]\n\n"
 sleep 5
 
 sudo apt-get update
