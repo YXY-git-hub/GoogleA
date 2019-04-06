@@ -10,6 +10,10 @@ echo -e "**********************************\n"
 #Install the package's system dependencies:
 sudo apt-get install portaudio19-dev libffi-dev libssl-dev libmpg123-dev -y
 
+echo "Hello"
+sleep 3
 #Use pip to install the latest version of the Python package in the virtual environment:
 python -m pip install --upgrade google-assistant-library==1.0.1
 python -m pip install --upgrade google-assistant-sdk[samples]==0.5.1
+echo "Hello"
+sleep 3
