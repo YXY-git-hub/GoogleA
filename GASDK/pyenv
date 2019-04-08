@@ -9,7 +9,7 @@ echo "****************************"
 echo -e "\n\nPlease make sure you move your client credential JSON file to current directory [`echo $HOME`]\n\n"
 sleep 5
 
-sudo apt-get update
+sudo apt-get update --fix-missing
 echo -e  "\n*Choose a python version available on your system.*"
 echo "*The one you are going to use for this project.****"
 echo " 1)Python3 [Recommended]"
