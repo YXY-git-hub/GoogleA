@@ -10,6 +10,6 @@ cd;git clone https://github.com/YXY-git-hub/GoogleA.git;mv GoogleA/GASDK/* ~;mv 
 * Embed the Google Assistant
   * [Set Up Hardware and Network Access](https://developers.google.com/assistant/sdk/guides/library/python/embed/setup?hardware=rpi)
   * [Configure and Test the Audio](https://developers.google.com/assistant/sdk/guides/library/python/embed/audio)
-  ```
-  mv GoogleA/arduioRecord/*;bash arduioRecordPlay;bash soundT;bash audioT
-  ```
+   ```
+   mv GoogleA/arduioRecord/*;bash arduioRecordPlay;bash soundT;bash audioT
+   ```
