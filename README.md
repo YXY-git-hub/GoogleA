@@ -3,9 +3,9 @@
 ![Google Assistant + Raspberry Pi](https://cdn.instructables.com/FJ5/M95M/JD0KD411/FJ5M95MJD0KD411.LARGE.jpg)
 
 [Introduction to the Google Assistant Library](https://developers.google.com/assistant/sdk/guides/library/python/)
-## Missing the Audio+Speaker part
+## Get the scripts
 ```
-cd;git clone https://github.com/YXY-git-hub/GoogleA.git;mv GoogleA/GASDK/* ~;mv runS ~;bash pyenv;bash packages;bash credentials;bash runS;rm pyenv packages credentials 
+cd;git clone https://github.com/YXY-git-hub/GoogleA.git;
 ```
 * Embed the Google Assistant
   * [Set Up Hardware and Network Access](https://developers.google.com/assistant/sdk/guides/library/python/embed/setup?hardware=rpi)
@@ -16,3 +16,12 @@ cd;git clone https://github.com/YXY-git-hub/GoogleA.git;mv GoogleA/GASDK/* ~;mv 
 
   * [Configure a Developer Project and Account Settings](https://developers.google.com/assistant/sdk/guides/library/python/embed/config-dev-project-and-account)
   * [Register the Device Model](https://developers.google.com/assistant/sdk/guides/library/python/embed/register-device)
+  * [Install the SDK and Sample Code](https://developers.google.com/assistant/sdk/guides/library/python/embed/install-sample)
+  ```
+  mv GoogleA/GASDK/* ~;bash pyenv;bash packages;bash credentials;rm pyenv packages credentials
+  ```
+
+ * [Run the Sample Code](https://developers.google.com/assistant/sdk/guides/library/python/embed/run-sample)
+ ```
+ mv GoogleA/runS ~;bash runS;rm runS
+ ```
