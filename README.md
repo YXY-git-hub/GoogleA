@@ -21,7 +21,7 @@ cd;git clone https://github.com/YXY-git-hub/GoogleA.git;
   mv GoogleA/GASDK/* ~;bash pyenv;bash packages;bash credentials;rm pyenv packages credentials
   ```
 
- * [Run the Sample Code](https://developers.google.com/assistant/sdk/guides/library/python/embed/run-sample)
- ```
- mv GoogleA/runS ~;bash runS;rm runS
- ```
+  * [Run the Sample Code](https://developers.google.com/assistant/sdk/guides/library/python/embed/run-sample)
+  ```
+  mv GoogleA/runS ~;bash runS;rm runS
+  ```
