@@ -3,10 +3,11 @@
 ![Google Assistant + Raspberry Pi](https://cdn.instructables.com/FJ5/M95M/JD0KD411/FJ5M95MJD0KD411.LARGE.jpg)
 
 [Introduction to the Google Assistant Library](https://developers.google.com/assistant/sdk/guides/library/python/)
-## Get the scripts
+## Get the scripts!
 ```
 cd;git clone https://github.com/YXY-git-hub/GoogleA.git;
 ```
+## Follow the steps!
 * Embed the Google Assistant
   * [Set Up Hardware and Network Access](https://developers.google.com/assistant/sdk/guides/library/python/embed/setup?hardware=rpi)
   * [Configure and Test the Audio](https://developers.google.com/assistant/sdk/guides/library/python/embed/audio)
@@ -23,5 +24,5 @@ cd;git clone https://github.com/YXY-git-hub/GoogleA.git;
 
   * [Run the Sample Code](https://developers.google.com/assistant/sdk/guides/library/python/embed/run-sample)
   ```
-  mv GoogleA/runS ~;bash runS;rm runS
+  mv GoogleA/runS ~;bash runS
   ```
