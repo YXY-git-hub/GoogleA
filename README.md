@@ -19,7 +19,10 @@ cd;git clone https://github.com/YXY-git-hub/GoogleA.git;
   * [Register the Device Model](https://developers.google.com/assistant/sdk/guides/library/python/embed/register-device)
   * [Install the SDK and Sample Code](https://developers.google.com/assistant/sdk/guides/library/python/embed/install-sample)
   ```
-  mv GoogleA/GASDK/* ~;bash pyenv;bash packages;bash credentials;rm pyenv packages credentials
+  mv GoogleA/GASDK/* ~;bash pyenv
+  ```
+  ```
+  bash packages;bash credentials;rm pyenv packages credentials
   ```
 
   * [Run the Sample Code](https://developers.google.com/assistant/sdk/guides/library/python/embed/run-sample)
