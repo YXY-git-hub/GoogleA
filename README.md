@@ -12,7 +12,7 @@ cd;git clone https://github.com/YXY-git-hub/GoogleA.git;
   * [Set Up Hardware and Network Access](https://developers.google.com/assistant/sdk/guides/library/python/embed/setup?hardware=rpi)
   * [Configure and Test the Audio](https://developers.google.com/assistant/sdk/guides/library/python/embed/audio)
    ```
-   mv GoogleA/arduioRecord/* ~;bash arduioRecordPlay;bash soundT;bash audioT;rm arduioRecordPlay soundT audioT
+   mv GoogleA/arduioRecord/* ~;bash arduioRecordPlay;bash soundT;bash audioT
    ```
 
   * [Configure a Developer Project and Account Settings](https://developers.google.com/assistant/sdk/guides/library/python/embed/config-dev-project-and-account)
@@ -22,10 +22,15 @@ cd;git clone https://github.com/YXY-git-hub/GoogleA.git;
   mv GoogleA/GASDK/* ~;bash pyenv
   ```
   ```
-  bash packages;bash credentials;rm pyenv packages credentials
+  bash packages;bash credentials
   ```
 
   * [Run the Sample Code](https://developers.google.com/assistant/sdk/guides/library/python/embed/run-sample)
   ```
   mv GoogleA/runS ~;bash runS
+  ```
+  
+  ## Remove the scripts
+  ```
+  rm arduioRecordPlay soundT audioT;rm pyenv packages credentials
   ```
