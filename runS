@@ -7,4 +7,4 @@ read -p "What is your project ID? " projectID
 read -p "What is your model ID? " modelID
 
 
-googlesamples-assistant-hotword --project-id projectID --device-model-id modelID 
+googlesamples-assistant-hotword --project-id $projectID --device-model-id $modelID 
