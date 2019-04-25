@@ -13,7 +13,7 @@ echo "*USB Microphone*"
 echo -e "****************"
 
 arecord -l
-sleep 3
+sleep 1
 #Display Speaker
 echo -e "\n\n*********"
 echo "*Speaker*"
@@ -23,7 +23,7 @@ aplay -l
 echo "************************************************************************************************"
 echo "*Note that the 3.5mm-jack is typically labeled Analog or bcm2835 ALSA (not bcm2835 IEC958/HDMI)*"
 echo -e "************************************************************************************************\n\n"
-sleep 3
+sleep 1
 #mic number
 read -p "Input the card number and device number of ur microphone respectively: " micC micD
 #speaker 
